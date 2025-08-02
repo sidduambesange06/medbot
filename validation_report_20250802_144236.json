@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-08-02T14:42:36.954793",
+  "overall_status": "warning",
+  "results": {
+    "environment": {
+      "status": "warning",
+      "details": [
+        "SUPABASE_URL: \u2705 Set",
+        "SUPABASE_KEY: \u2705 Set",
+        "JWT_SECRET: \u2705 Set",
+        "GROQ_API_KEY: \u2705 Set",
+        "PINECONE_API_KEY: \u2705 Set",
+        "PINECONE_ENVIRONMENT: \u2705 Set",
+        "PINECONE_INDEX_NAME: \u2705 Set",
+        "\u26a0\ufe0f  Missing optional variables:",
+        "  - OPENAI_API_KEY (OpenAI API for LLM)"
+      ]
+    },
+    "database": {
+      "status": "success",
+      "details": [
+        "\u2705 Supabase connection successful",
+        "users: \u2705 Accessible",
+        "chat_history: \u2705 Accessible",
+        "conversation_summaries: \u2705 Accessible",
+        "user_context_preferences: \u2705 Accessible",
+        "medical_documents: \u2705 Accessible",
+        "medical_knowledge_chunks: \u2705 Accessible"
+      ]
+    },
+    "ai_services": {
+      "status": "success",
+      "details": [
+        "Groq: \u2705 Connected"
+      ]
+    },
+    "vector_store": {
+      "status": "success",
+      "details": [
+        "Pinecone: \u2705 Connected (v6+)",
+        "  Available indexes: ['medical-chatbot-v2']",
+        "  Index 'medical-chatbot-v2': \u2705 Found",
+        "  Vectors: 3066"
+      ]
+    },
+    "security": {
+      "status": "warning",
+      "details": [
+        "JWT Secret: \u2705 Set and sufficient length",
+        "Security module: \u2705 Found",
+        "  hash_password: \u2705 Found",
+        "  verify_password: \u2705 Found",
+        "  generate_token: \u2705 Found",
+        "  verify_token: \u2705 Found",
+        "  sanitize_input: \u2705 Found",
+        "Environment: \u26a0\ufe0f  Not set to production"
+      ]
+    },
+    "file_structure": {
+      "status": "success",
+      "details": [
+        "app.py: \u2705 Found",
+        "store_index.py: \u2705 Found",
+        "requirements.txt: \u2705 Found",
+        "src/helper.py: \u2705 Found",
+        "src/prompt.py: \u2705 Found",
+        "src/chat_service.py: \u2705 Found",
+        "src/security.py: \u2705 Found",
+        ".env: \u2705 Found",
+        "src/: \u2705 Found",
+        "data/: \u2705 Found",
+        "logs/: \u2705 Found",
+        "static/: \u2705 Found",
+        "templates/: \u2705 Found"
+      ]
+    }
+  }
+}
