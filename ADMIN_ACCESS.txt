@@ -1,0 +1,46 @@
+ADMIN PANEL ACCESS GUIDE (Developer Only)
+==========================================
+
+DIRECT ACCESS URLS:
+- Admin Login: http://localhost:8080/admin/login
+- Admin Panel: http://localhost:8080/admin  
+- Admin Test: http://localhost:8080/admin-test
+
+ADMIN CREDENTIALS:
+- Email: sidduambesange005@gmail.com
+- Password: siddustar2004
+
+ACCESS STEPS:
+
+1. Start the application:
+   python app.py
+
+2. Direct browser access:
+   - Open browser
+   - Navigate to: http://localhost:8080/admin/login
+   - Enter credentials above
+   - Access admin dashboard
+
+3. Alternative access:
+   - Go to: http://localhost:8080/admin
+   - Will redirect to login if not authenticated
+
+SECURITY NOTES:
+- Admin panel is completely separate from user OAuth
+- Only accessible via direct URL navigation
+- Session-based authentication
+- Developer/admin access only
+
+IF ADMIN LOGIN FAILS:
+1. Clear browser cookies/cache
+2. Verify credentials exactly as shown
+3. Check console logs for errors
+4. Ensure Flask app is running on port 8080
+
+ADMIN DASHBOARD FEATURES:
+- Real-time system metrics
+- Log management (view/filter logs)
+- File management (upload/delete medical documents)
+- Terminal access (restricted commands)
+- Cache management
+- System information display
