@@ -143,6 +143,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+medbot-env/
 
 # Spyder project settings
 .spyderproject
@@ -205,3 +206,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# MedBot specific files that should be ignored
+medbot-v1/
+*.exe
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+flask_sessions/
+flask-session/
+medical_cache/
+uploads/temp/
+logs/
+*.pid
